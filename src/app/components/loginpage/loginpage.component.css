@@ -1,0 +1,9 @@
+.container {
+  min-height: 100vh;
+  min-width: 100%;
+}
+.card {
+  position: relative;
+  top: 60px;
+  background: linear-gradient(120deg, #2980b9, #8e44ad);
+}

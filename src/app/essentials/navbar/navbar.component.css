@@ -1,0 +1,11 @@
+.navbar {
+  position: relative;
+  height: 55px;
+}
+.container-fluid {
+  background: linear-gradient(120deg, #2980b9, #8e44ad);
+}
+
+.container-fluid h2 {
+  color: aqua;
+}
