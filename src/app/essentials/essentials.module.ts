@@ -4,7 +4,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [NavbarComponent],
-  imports: [CommonModule,],
+  imports: [CommonModule],
   exports: [NavbarComponent],
 })
 export class EssentialsModule {}

@@ -1,3 +1,4 @@
+<app-navbar></app-navbar>
 <div class="container pt-5">
   <div class="col-12 col-sm-8 col-md-6 m-auto">
     <div class="card border-0 shadow">
@@ -23,12 +24,13 @@
           <form>
             <div class="form-floating mb-3">
               <input
-                type="email"
+                type="text"
                 class="form-control"
-                id="emailInput"
-                placeholder="abc@example.com"
+                id="textInput"
+                placeholder="abc"
+                [(ngModel)]="loginObj.username"
               />
-              <label for="emailInput" class="form-label">Email Address</label>
+              <label for="idInput" class="form-label">User Id</label>
             </div>
             <div class="form-floating mb-3">
               <input
@@ -36,6 +38,7 @@
                 class="form-control"
                 id="passwordInput"
                 placeholder="password"
+                [(ngModel)]="loginObj.password"
               />
               <label for="passwordInput" class="form-label">Password</label>
             </div>
@@ -50,7 +53,9 @@
               >
             </div>
             <div class="text-center">
-              <button type="submit" class="btn btn-primary">Login</button>
+              <button (click)="onLogin()" type="submit" class="btn btn-primary">
+                Login
+              </button>
             </div>
           </form>
         </div>

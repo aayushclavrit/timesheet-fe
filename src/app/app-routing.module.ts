@@ -7,6 +7,10 @@ import { NavbarComponent } from './essentials/navbar/navbar.component';
 
 const routes: Routes = [
   {
+    path: '',
+    component: LoginpageComponent,
+  },
+  {
     path: 'loginpage',
     component: LoginpageComponent,
   },

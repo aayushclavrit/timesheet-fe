@@ -1,52 +1,136 @@
 <app-navbar></app-navbar>
+
 <div class="container mt-5 pt-5">
   <div class="card">
     <div class="card-body">
       <form>
         <div class="row">
+          <div class="col-md-2">
+            <label for="date input" id="day" class="form-label">Monday</label>
+          </div>
+          <div class="col-md-3">
+            <label for="date input" class="form-label">Date</label>
+            <input type="date" class="form-control" id="dateInput" />
+            <label for="date input" id="attendence" class="form-label"
+              >Leave
+            </label>
+            <div class="form group">
+              <select class="selectpicker form-control">
+                <option value="-1">Select</option>
+                <option>Sick Leave</option>
+                <option>Casual Leave</option>
+              </select>
+            </div>
+          </div>
           <div class="col-md-6">
+            <label for="textAreaComment" class="form-label" id="textarea"
+              >Comment</label
+            >
+            <textarea
+              name="textComment"
+              id="textbox"
+              cols="70"
+              rows="3"
+            ></textarea>
+          </div>
+        </div>
+        <hr id="hr" class="hr hr-blurry" />
+
+        <div class="row mt-5 pt-5">
+          <div class="col-md-2">
+            <label for="date input" id="day" class="form-label">Tuesday</label>
+          </div>
+          <div class="col-md-3">
             <label for="date input" class="form-label">Date</label>
             <input type="date" class="form-control" id="dateInput" />
           </div>
           <div class="col-md-6">
-            <label for="hour input" class="form-label">Daily Hours</label>
-            <input type="time" class="form-control" id="dateInput" />
+            <label for="textAreaComment" class="form-label" id="textarea"
+              >Comment</label
+            >
+            <textarea
+              name="textComment"
+              id="textbox"
+              cols="70"
+              rows="3"
+            ></textarea>
           </div>
         </div>
-        <div class="mt-5">
-          <label for="textAreaComment" class="form-label" id="textarea"
-            >Comment</label
-          >
-          <textarea name="" id="" cols="70" rows="3"></textarea>
+        <hr class="hr hr-blurry" />
+        <div class="row mt-5 pt-5">
+          <div class="col-md-2">
+            <label for="date input" id="day" class="form-label"
+              >Wednesday</label
+            >
+          </div>
+          <div class="col-md-3">
+            <label for="date input" class="form-label">Date</label>
+            <input type="date" class="form-control" id="dateInput" />
+          </div>
+          <div class="col-md-6">
+            <label for="textAreaComment" class="form-label" id="textarea"
+              >Comment</label
+            >
+            <textarea
+              name="textComment"
+              id="textbox"
+              cols="70"
+              rows="3"
+            ></textarea>
+          </div>
         </div>
-        <div class="mt-2">
-          <button type="submit" class="btn btn-primary">Submit</button>
+        <hr class="hr hr-blurry" />
+        <div class="row mt-5 pt-5">
+          <div class="col-md-2">
+            <label for="date input" id="day" class="form-label">Thursday</label>
+          </div>
+          <div class="col-md-3">
+            <label for="date input" class="form-label">Date</label>
+            <input type="date" class="form-control" id="dateInput" />
+          </div>
+          <div class="col-md-6">
+            <label for="textAreaComment" class="form-label" id="textarea"
+              >Comment</label
+            >
+            <textarea
+              name="textComment"
+              id="textbox"
+              cols="70"
+              rows="3"
+            ></textarea>
+          </div>
+        </div>
+        <hr class="hr hr-blurry" />
+        <div class="row mt-5 pt-5">
+          <div class="col-md-2">
+            <label for="date input" id="day" class="form-label">Friday</label>
+          </div>
+          <div class="col-md-3">
+            <label for="date input" class="form-label">Date</label>
+            <input type="date" class="form-control" id="dateInput" />
+          </div>
+          <div class="col-md-6">
+            <label for="textAreaComment" class="form-label" id="textarea"
+              >Comment</label
+            >
+            <textarea
+              name="textComment"
+              id="textbox"
+              cols="70"
+              rows="3"
+            ></textarea>
+          </div>
+        </div>
+        <hr class="hr hr-blurry" />
+        <div class="row">
+          <div class="col-md-2 mt-5">
+            <button type="submit" class="btn btn-primary">Edit</button>
+            <button id="submit" type="submit" class="btn btn-primary">
+              Submit
+            </button>
+          </div>
         </div>
       </form>
     </div>
   </div>
 </div>
-<!-- <div class="container mt-5 pt-5">
-  <div class="table">
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">Asset Category</th>
-          <th scope="col">Asset Description</th>
-          <th scope="col">Serial#</th>
-          <th scope="col">Date Assigned</th>
-          <th scope="col">Date Returned</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            <form >
-                <input type="text">
-            </form>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div> -->
