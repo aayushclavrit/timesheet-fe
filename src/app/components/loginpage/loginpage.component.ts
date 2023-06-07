@@ -32,14 +32,21 @@ export class LoginpageComponent implements OnInit {
         if (role == 'employee') {
           this.route.navigateByUrl('userpage');
         }
+
         if (role == 'admin') {
           this.route.navigateByUrl('adminpage');
         }
-        if (role == 'nothing') {
+        if (role == '') {
           console.log('Invalid Details');
-        } else {
-          console.log('nothing here');
         }
+        // if (
+        //   this.loginObj.username == 'aayush' ||
+        //   this.loginObj.password == 12345
+        // ) {
+        //   this.route.navigateByUrl('userpage');
+        // } else {
+        //   alert('invalid details');
+        // }
       });
   }
 }
